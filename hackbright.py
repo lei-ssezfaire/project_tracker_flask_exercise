@@ -158,6 +158,14 @@ def handle_input():
             get_grades_by_title(title)
 
 
+def student_grade_tuples(github):
+    """Returns a list of tuples, where each tuple contains 
+    the project title and grade"""
+
+    grade = get_grades_by_github(github)
+    # grade_tuple = grade.items()
+    return grade
+
 
 if __name__ == "__main__":
     app = Flask(__name__)
